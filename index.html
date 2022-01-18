@@ -6,10 +6,10 @@
 <title>tracking</title>
 <!-- InstanceEndEditable -->
 <link href="style/style-sheet1.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
-
 <!-- InstanceBeginEditable name="head" -->
+<link href="style/owl.carousel.min.css" rel="stylesheet" type="text/css">
 <!-- InstanceEndEditable -->
+<script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <div class ="trk-wrapper">
@@ -31,13 +31,45 @@
   </div>
   <!-- InstanceBeginEditable name="EditRegion3" -->
 	
-  <div class="banner">
-	  <div class="content-wd banner-cnt">
-      <div class="banner-cta">
-      <a href="cart.html" class="banner-btn">BUY NOW</a>
+  <div class="banners owl-carousel">
+    <div class="banner" style="background-image: url('images/image-slice/Layer_5.png');">
+      <div class="content-wd banner-cnt">
+        <div class="banner-cta">
+          <a href="cart.html" class="banner-btn">BUY NOW</a>
+        </div>
+        <div class="flexdiv">
+          <!--<div class="slider-icon"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1.png" alt="" width="15" height="13"> <img class="icon-sp"  src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> </div>-->
+        </div>
       </div>
-      <div class="flexdiv">
-        <div class="slider-icon"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1.png" alt="" width="15" height="13"> <img class="icon-sp"  src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> </div>
+    </div>
+	  <div class="banner" style="background-image: url('images/image-slice/banner-2.png');">
+      <div class="content-wd banner-cnt">
+        <div class="banner-cta">
+          <a href="cart.html" class="banner-btn">BUY NOW</a>
+        </div>
+        <div class="flexdiv">
+          <!--<div class="slider-icon"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1.png" alt="" width="15" height="13"> <img class="icon-sp"  src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> </div>-->
+        </div>
+      </div>
+    </div>
+	  <div class="banner" style="background-image: url('images/image-slice/banner-3.png');">
+      <div class="content-wd banner-cnt">
+        <div class="banner-cta">
+          <a href="cart.html" class="banner-btn">BUY NOW</a>
+        </div>
+        <div class="flexdiv">
+          <!--<div class="slider-icon"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1.png" alt="" width="15" height="13"> <img class="icon-sp"  src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> </div>-->
+        </div>
+      </div>
+    </div>
+	  <div class="banner" style="background-image: url('images/image-slice/banner-4.png');">
+      <div class="content-wd banner-cnt">
+        <div class="banner-cta">
+          <a href="cart.html" class="banner-btn">BUY NOW</a>
+        </div>
+        <div class="flexdiv">
+          <!--<div class="slider-icon"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1.png" alt="" width="15" height="13"> <img class="icon-sp"  src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> <img class="icon-sp" src="images/image-slice/Ellipse_1_copy_4.png" alt="" width="15" height="13"> </div>-->
+        </div>
       </div>
     </div>
   </div>
@@ -45,11 +77,11 @@
   <div class="content-wd biketyp">
     <div class="biketyp-cnt">
       <ul class="bike-list">
-        <li class="bikes active">E-Bikes</li>
-        <li class="bikes">Mountain Bikes</li>
-        <li class="bikes">Hybrid Bikes</li>
-        <li class="bikes">Fat Tire Bikes</li>
-        <li class="bikes">Little champ</li>
+        <li><button class="bikes active">E-Bikes</button></li>
+        <li><button class="bikes">Mountain Bikes</button></li>
+        <li><button class="bikes">Hybrid Bikes</button></li>
+        <li><button class="bikes">Fat Tire Bikes</button></li>
+        <li><button  class="bikes">Little champ</button></li>
       </ul>
       <div class="bikes-cnt"> <img style="border-radius: 45px" src="images/image-slice/Layer_38.png" alt="" width="955" height="500">
         <div class="bike-pg">
@@ -218,5 +250,27 @@
     <h3 class="content-wd footer-last">All Rights Reserved © Tracking.com 2021</h3>
   </div>
 </div>
+<!-- InstanceBeginEditable name="EditRegion4" -->
+	<script type="text/javascript" src="script/owl.carousel.min.js"></script>
+	<script>
+		var owl = $('.banners.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:0,
+    autoplay:true,
+	dots:true,
+//    autoplayTimeout:1000,
+//    autoplayHoverPause:true
+});
+//$('.play').on('click',function(){
+//    owl.trigger('play.owl.autoplay',[1000])
+//})
+//$('.stop').on('click',function(){
+//    owl.trigger('stop.owl.autoplay')
+//})
+	</script>
+	<!-- InstanceEndEditable -->
+	
 </body>
 <!-- InstanceEnd --></html>
