@@ -82,6 +82,7 @@
 }
 .icon-wrap {
   display: flex;
+  align-items: center;
 }
 .icons {
   margin-right: 13px;
@@ -104,18 +105,18 @@
   font-family: 'Noto Sans', sans-serif;
 }
 .cart-drop {
-    position: absolute;
-    top: 58px;
-    padding: 1px 25px;
-    left: -178px;
-    width: 353px;
-    height: 576px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 17.43px 3.57px rgb(42 41 41 / 6%);
-    border-radius: 14px;
-    border-top: 5px solid #ff6633;
-    z-index: 2;
-	display: none;
+  position: absolute;
+  top: 58px;
+  padding: 1px 25px;
+  right: -89px;
+  width: 364px;
+  height: 576px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 17.43px 3.57px rgb(42 41 41 / 6%);
+  border-radius: 14px;
+  border-top: 5px solid #ff6633;
+  z-index: 2;
+  display: none;
 }
 .cart-hd {
   font-family: 'Noto Sans', sans-serif;
@@ -127,17 +128,17 @@
   text-decoration: underline;
 }
 .cart-pro {
-    height: 86px;
-    overflow: hidden;
-    border-radius: 14px;
+  height: 86px;
+  overflow: hidden;
+  border-radius: 14px;
 }
 .cart-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 244px;
-    text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 244px;
+  text-decoration: none;
 }
 .cart-pro-1 {
   transform: scale(0.9);
@@ -145,13 +146,18 @@
   height: 100%;
 }
 .progrp-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 12px;
-    align-items: center;
-    width: 301px;
-    border-bottom: 1px solid #a4a4a45c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 12px;
+  align-items: center;
+  width: 301px;
+  border-bottom: 1px solid #a4a4a45c;
+  transition: 0.3s ease-in-out;
+}
+.progrp-1:hover {
+  background-color: #f1f1f17d;
+  border-radius: 10px;
 }
 .pro-name {
   font-size: 13px;
@@ -163,43 +169,129 @@
   height: 23px;
 }
 .total {
-          font-family: 'Noto Sans', sans-serif;
-    color: #000000;
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 17px;
-    width: 100%;
-    padding: 7px 0px;
-    background-color: #bfbcbc1a;
+  font-family: 'Noto Sans', sans-serif;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 17px;
+  width: 100%;
+  padding: 7px 0px;
+  background-color: #bfbcbc1a;
 }
-.drop-btn1{
-	    font-family: "Noto Sans", sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 24px;
-    width: 100%;
-    padding: 8px 0px;
-    border: 1px solid #5e5e5e94;
-     border-radius: 10px;
-	text-decoration: none;
-	display: block;
+.drop-btn1 {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 24px;
+  width: 100%;
+  padding: 8px 0px;
+  border: 1px solid #5e5e5e94;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  transition: 0.4s ease-in-out;
 }
-.drop-btn2{
-	    font-family: 'Noto Sans', sans-serif;
-    color: #000000;
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 15px;
-    width: 100%;
-    padding: 13px 2px;
-    background-color: #7c7c7c1a;
-    text-decoration: none;
-    border-radius: 10px;
-	display: block;
+.drop-btn1:hover {
+  background-color: rgb(217 216 216 / 93%);
+}
+.drop-btn2 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+  padding: 13px 2px;
+  background-color: #f2631f;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+}
+.drop-btn2:hover {
+  background-color: #FF5200;
+}
+.profile-wrap {
+  position: relative;
+}
+.profile-drop {
+  position: absolute;
+  top: 58px;
+  padding: 1px 25px;
+  right: -89px;
+  width: 262px;
+  height: 290px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 17.43px 3.57px rgb(42 41 41 / 6%);
+  border-radius: 14px;
+  border-top: 5px solid #ff6633;
+  z-index: 2;
+  display: none;
+}
+.profile-cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 29px;
+}
+.profile-login {
+  font-size: 25px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #000000;
+  margin-bottom: 11px;
+}
+.profile-p {
+  font-size: 13px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #000000;
+  margin-top: 9px;
+}
+.profile-email {
+  padding: 6px 7px;
+  font-family: 'Noto Sans', sans-serif;
+  width: 225px;
+  outline: none;
+  margin-top: 9px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #8f8c8cad;
+}
+.profile-pass {
+  padding: 6px 7px;
+  font-family: 'Noto Sans', sans-serif;
+  width: 225px;
+  outline: none;
+  margin-top: 9px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #8f8c8cad;
+}
+.forgot {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 10px;
+  margin-top: 3px;
+  margin-right: 132px;
+  color: #f2631f;
+}
+.login-btn {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  background: #ff5200;
+  width: 100%;
+  height: 30px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 13px;
+}
+.signup {
+  color: #ff6734;
+  text-decoration: none;
 }
 .banner {
   background-position: center;
@@ -1176,6 +1268,287 @@
 .box-grp {
   display: flex;
   justify-content: space-between;
+}
+.cart-back{
+	background-color: #f1f3f6;
+}
+.cart-banner{
+	width: 100%;
+	height: 565px;
+	background-color: #000000;
+	position: relative;
+	margin-bottom: 109px;
+}
+.banner-img{
+    width: 100%;
+    height: 565px;
+    opacity: 0.3;
+}
+.cart-banner-cnt{
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    top: 215px;
+    left: 1108px;
+}
+.cart-banner-p{
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 291px;
+    left: 1119px;
+}
+.cart-box{
+    width: 726px;
+    height: 772px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 8.84px 4.16px rgba(76, 76, 76, 0.13);
+    position: relative;
+    margin-bottom: 131px;
+}
+.cart-product{
+    width: 157px;
+    height: 99px;
+}
+.cart-head{
+    font-family: 'Noto Sans', sans-serif;
+    color: #000000;
+    font-size: 22px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    font-weight: 700;
+    width: 100%;
+    height: 74px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #48484875;
+    padding: 21px 42px;
+}
+.quantity{
+    font-family: 'Noto Sans', sans-serif;
+    width: 73px;
+    height: 24px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3.56px 0.44px rgba(42, 41, 41, 0.54);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 87px;
+    margin-top: 6px;
+}
+.quantity-btn-less{
+    color: #727171;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 5px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+	background-color: #FFFFFF;
+}
+.quantity-btn-add{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 5px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: #FFFFFF;
+	
+}
+.numbers{
+    width: 32px;
+    height: 24px;
+    background-color: #efefef;
+    font-family: 'Noto Sans', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+}
+.cart-delete{
+	width: 11px;
+	height: 13px;
+}
+.cart-cnt{
+display: flex;
+    flex-direction: column;
+}
+.cart-cycle{
+	font-family: 'Noto Sans', sans-serif;
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 33.792px;
+}
+.cart-price{
+	font-family: 'Noto Sans', sans-serif;
+	color: #f2631f;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+}
+.cart-offer{
+	font-family: 'Noto Sans', sans-serif;
+	color: #848484;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 18px;
+	text-decoration: line-through;
+}
+.offer{
+	font-family: 'Noto Sans', sans-serif;
+	color: #197e02;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 18px;
+}
+.save{
+	font-family: 'Noto Sans', sans-serif;
+	color: #000000;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 18px;
+	text-decoration: none;
+	margin-right: 16px;
+}
+.cart-remove{
+	font-family: 'Noto Sans', sans-serif;
+	color: #000000;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 18px;
+		text-decoration: none;
+}
+.delivery-p{
+    font-family: 'Noto Sans', sans-serif;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.replace{
+	font-family: 'Noto Sans', sans-serif;
+	color: #9d9d9d;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+}
+.cart-cnt-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 36px;
+}
+.save-remove{
+     
+}
+.btns-grp{
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    justify-content: space-between;
+    width: 490px;
+}
+.box-last{
+    width: 100%;
+    border-top: 1px solid #48484875;
+    margin-top: 49px;
+}
+.order-btn{
+    width: 201px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #fb641b;
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 13px 27px;
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    bottom: 26px;
+    right: 33px;
+}
+.order-btn:hover{
+	 background-color: #FC5200;
+}
+.price-box{
+    width: 454px;
+    height: 373px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8.84px 4.16px rgba(76, 76, 76, 0.17);
+}
+.boxes-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.price-cnt{
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    color: #010101;
+    font-size: 18.85px;
+    font-weight: 500;
+    line-height: 49.157px;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+.price-price{
+	font-family: 'Noto Sans', sans-serif;
+	color: #010101;
+	font-size: 18.85px;
+	font-weight: 500;
+	line-height: 49.157px;
+}
+.offer-price{
+	font-family: 'Noto Sans', sans-serif;
+	color: #1a7e02;
+	font-size: 18.85px;
+	font-weight: 500;
+	line-height: 49.157px;
+}
+.price-line{
+    width: 100%;
+    margin-top: 6px;
+}
+.price-wrap{
+    padding: 10px 31px;
+    width: 100%;
+}
+.price-cnt-b{
+    font-family: 'Noto Sans', sans-serif;
+    color: #010101;
+    font-size: 18.85px;
+    font-weight: 600;
+    line-height: 49.157px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.total-price{
+font-family: 'Noto Sans', sans-serif;
+	color: #010101;
+	font-size: 18.85px;
+	font-weight: 600;
+	line-height: 49.157px;
+}
+.price-save{
+    font-family: 'Noto Sans', sans-serif;
+    color: #429032;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 49.157px;
 }
 .owl-dots {
   position: relative;
