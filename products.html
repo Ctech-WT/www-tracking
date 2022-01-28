@@ -25,36 +25,38 @@
         <div class="sr-icon">
           <input class="search" type="search" placeholder="search on tracking">
           <a class="searchicon" href="#"><img src="images/image-slice/Layer_45.png" alt="" width="16" height="15"></a></div>
-        <div class="icon-wrap"> <a class="icons" href="#"><img src="images/image-slice/Layer_35.png" alt="" width="23" height="23"></a> <a class="icons" href="#"><img src="images/image-slice/Layer_34.png" alt="" width="22" height="19"></a> 
-			<div class="cart-wrap">
-			<a class="icons" href="#"><img src="images/image-slice/Layer_32.png" alt="" width="24" height="20"></a>
-			<span class="notifi">3</span>
-			  <div class="cart-drop">
-				  <h3 class="cart-hd">Cart details</h3>
-				  <div class="progrp-1">
-					  <a class="cart-flex" href="#">
-				<div class="cart-pro"><img class="cart-pro-1" src="images/image-slice/e-bikes/Layer_5418.png" alt="" width="322" height="217"></div><span class="pro-name">Fusion 26<b style="color: #f2631f"> <br>MRP: ₹ 15,291/-</b> </span> 
-						  </a>
-				  <img class="delete-icon" src="images/image-slice/delete.png" alt="" width="512" height="512">
-			  </div>
-				  <div class="progrp-1">
-					  <a class="cart-flex" href="#">
-				<div class="cart-pro"><img class="cart-pro-1" src="images/image-slice/e-bikes/Layer_5413.png" alt="" width="316" height="191"></div><span class="pro-name">AXXIS 27.5 D<b style="color: #f2631f"> <br>MRP: ₹ 12,960/-</b> </span> 
-						  </a>
-				  <img class="delete-icon" src="images/image-slice/delete.png" alt="" width="512" height="512">
-			  </div>
-				  <div class="progrp-1">
-					  <a class="cart-flex" href="#">
-				<div class="cart-pro"><img class="cart-pro-1" src="images/image-slice/e-bikes/Layer_5415.png" alt="" width="306" height="192"></div><span class="pro-name">SNOW LEOPARD<b style="color: #f2631f"> <br>MRP: ₹ 28,291/-</b> </span> 
-						  </a>
-				  <img class="delete-icon" src="images/image-slice/delete.png" alt="" width="512" height="512">
-			  </div>
-				  <h3 class="total">Total price = <b style="color: #F2631F; margin-left: 8px">₹ 56,542/-</b></h3>
-				 <a class="drop-btn1" href="#">View Cart</a> 
-				 <a class="drop-btn2" href="#">Checkout</a> 
-	     </div>	
-		  </div>
-		  </div>
+        <div class="icon-wrap">
+          <div class="profile-wrap"> <a class="icons" href="#"><img src="images/image-slice/Layer_35.png" alt="" width="23" height="23"></a>
+            <div class="profile-drop">
+              <div class="profile-cnt">
+                <h3 class="profile-login">LOGIN</h3>
+                <input class="profile-email" type="email" placeholder="Enter Email Address">
+                <input class="profile-pass" type="password" placeholder="Password">
+                <span class="forgot">Forgot password</span> <a class="login-btn" href="#">Login</a>
+                <p class="profile-p">I am a new member? <span><a class="signup" href="#">Sign up</a></span></p>
+              </div>
+            </div>
+          </div>
+          <a class="icons" href="#"><img src="images/image-slice/Layer_34.png" alt="" width="22" height="19"></a>
+          <div class="cart-wrap"> <a class="icons" href="#"><img src="images/image-slice/Layer_32.png" alt="" width="24" height="20"></a> <span class="notifi">3</span>
+            <div class="cart-drop">
+              <h3 class="cart-hd">Cart details</h3>
+              <div class="progrp-1"> <a class="cart-flex" href="#">
+                <div class="cart-pro"><img class="cart-pro-1" src="images/image-slice/e-bikes/Layer_5418.png" alt="" width="322" height="217"></div>
+                <span class="pro-name">Fusion 26<b style="color: #f2631f"> <br>
+                MRP: ₹ 15,291/-</b> </span> </a> <img class="delete-icon" src="images/image-slice/delete.png" alt="" width="512" height="512"> </div>
+              <div class="progrp-1"> <a class="cart-flex" href="#">
+                <div class="cart-pro"><img class="cart-pro-1" src="images/image-slice/e-bikes/Layer_5413.png" alt="" width="316" height="191"></div>
+                <span class="pro-name">AXXIS 27.5 D<b style="color: #f2631f"> <br>
+                MRP: ₹ 12,960/-</b> </span> </a> <img class="delete-icon" src="images/image-slice/delete.png" alt="" width="512" height="512"> </div>
+              <div class="progrp-1"> <a class="cart-flex" href="#">
+                <div class="cart-pro"><img class="cart-pro-1" src="images/image-slice/e-bikes/Layer_5415.png" alt="" width="306" height="192"></div>
+                <span class="pro-name">SNOW LEOPARD<b style="color: #f2631f"> <br>
+                MRP: ₹ 28,291/-</b> </span> </a> <img class="delete-icon" src="images/image-slice/delete.png" alt="" width="512" height="512"> </div>
+              <h3 class="total">Total price = <b style="color: #F2631F; margin-left: 8px">₹ 56,542/-</b></h3>
+              <a class="drop-btn1" href="final-cart.html">View Cart</a> <a class="drop-btn2" href="#">Checkout</a> </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -310,13 +312,30 @@
 </div>
 <!-- InstanceBeginEditable name="EditRegion4" -->
 	
-	<!-- InstanceEndEditable -->
-	<script>
+	<!-- InstanceEndEditable --> 
+<script>
 	$(document).ready (function(){
 		$('.cart-wrap').on("click", function(){
 		$('.cart-drop').fadeToggle();	
 		});
 });
+		
+		$(document).ready (function(){
+		$('.profile-wrap').on("click", function(){
+		$('.profile-drop').fadeToggle();	
+		});
+});
+		$(document).ready(function(){
+$(".cart-wrap").click(function(){
+$(".profile-drop").hide();
+});
+});
+		$(document).ready(function(){
+$(".profile-wrap").click(function(){
+$(".cart-drop").hide();
+});
+});
+		
 	</script>
 </body>
 <!-- InstanceEnd --></html>
