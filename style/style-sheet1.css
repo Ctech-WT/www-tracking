@@ -105,18 +105,18 @@
   font-family: 'Noto Sans', sans-serif;
 }
 .cart-drop {
-  position: absolute;
-  top: 58px;
-  padding: 1px 25px;
-  right: -89px;
-  width: 364px;
-  height: 576px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 17.43px 3.57px rgb(42 41 41 / 6%);
-  border-radius: 14px;
-  border-top: 5px solid #ff6633;
-  z-index: 2;
-  display: none;
+    position: absolute;
+    top: 50px;
+    padding: 1px 25px;
+    right: 0px;
+    width: 364px;
+    height: 576px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 17.43px 3.57px rgb(42 41 41 / 6%);
+    border-radius: 14px;
+    border-top: 5px solid #ff6633;
+    z-index: 2;
+    display: none;
 }
 .cart-hd {
   font-family: 'Noto Sans', sans-serif;
@@ -1289,18 +1289,19 @@
     color: #ffffff;
     font-size: 60px;
     font-weight: 700;
+
+}
+.banner-cart-h1{
     position: absolute;
-    top: 215px;
-    left: 1108px;
+    top: 199px;
+    left: 767px;
 }
 .cart-banner-p{
     font-family: 'Noto Sans', sans-serif;
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
-    position: absolute;
-    top: 291px;
-    left: 1119px;
+
 }
 .cart-box{
     width: 726px;
@@ -1549,6 +1550,41 @@ font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
     font-weight: 500;
     line-height: 49.157px;
+}
+.cart-banner-wrap{
+    position: relative;
+    z-index: 1;
+}
+.shipping-hd{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 52px;
+    
+}
+.shipping-sub{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.shipping-p-1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 350;
+    margin-bottom: 38px;
+    color: black;
+}
+.shipping-cnt{
+    margin-bottom: 97px;
+    margin-top: 97px;
+}
+.terms-sub{
+	    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 350;
+    margin-bottom: 32px;
 }
 .owl-dots {
   position: relative;
