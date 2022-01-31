@@ -1301,6 +1301,7 @@
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
+    margin-left: 11px;
 
 }
 .cart-box{
@@ -1364,13 +1365,15 @@
 	
 }
 .numbers{
-    width: 32px;
+    width: 40px;
     height: 24px;
     background-color: #efefef;
     font-family: 'Noto Sans', sans-serif;
     color: #000000;
     font-size: 18px;
     text-align: center;
+    border: none;
+    outline: none;
 }
 .cart-delete{
 	width: 11px;
@@ -1586,8 +1589,162 @@ font-family: 'Noto Sans', sans-serif;
     font-weight: 350;
     margin-bottom: 32px;
 }
+.acessories-cnt{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+.accessories-banner{
+	    width: 100%;
+    height: 565px;
+    background-color: #000000;
+    position: relative;
+    margin-bottom: 11px;
+}
+.accessories-wrap{
+    margin-bottom: 116px;
+    margin-top: 61px;
+}
+.accessories-banner-p{
+	    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+.acessories-box{
+	    width: 383px;
+    height: 291px;
+    border-radius: 29px;
+    background-color: #fcfcfa;
+    box-shadow: 0px 4px 17.43px 3.57px rgba(42, 41, 41, 0.13);
+    position: relative;
+}
+.acessories-btn{
+	    width: 131px;
+    height: 44px;
+    border-bottom-right-radius: 32px;
+    background-color: #000000;
+    position: absolute;
+    top: 247px;
+    left: 253px;
+    border: none;
+}
+.acessories-btn:hover{
+	    background-color: #ffea00;
+    color: #000000;
+}
+.acessories-product{
+	    position: absolute;
+    left: 134px;
+    top: 32px;
+    transition: 0.4s ease-in-out;
+    width: 136px;
+    height: 154px;
+}
+.acessories-product:hover{
+	transform: scale(1.1);
+}
 .owl-dots {
   position: relative;
   margin-top: -32px;
   text-align: center;
+}
+.acessories-helmet{
+    width: 221px;
+    height: 190px;
+    position: absolute;
+    left: 79px;
+    top: 12px;
+    transition: 0.4s ease-in-out;
+}
+.acessories-helmet:hover{
+	transform: scale(1.1);
+}
+.acessories-mudgad{
+    width: 243px;
+    height: 186px;
+    position: absolute;
+    left: 77px;
+    top: 25px;
+    transition: 0.4s ease-in-out;
+}
+.acessories-mudgad:hover{
+	transform: scale(1.1);
+}
+.acessories-pump{
+    width: 202px;
+    height: 181px;
+    position: absolute;
+    left: 102px;
+    top: 10px;
+    transition: 0.4s ease-in-out;
+}
+.acessories-pump:hover{
+	transform: scale(1.1);
+}
+.acessories-waterbottle{
+    width: 224px;
+    height: 186px;
+    position: absolute;
+    left: 82px;
+    top: 14px;
+    transition: 0.4s ease-in-out;	
+}
+.acessories-waterbottle:hover{
+	transform: scale(1.1);
+}
+.acessories-seat{
+    width: 185px;
+    height: 177px;
+    position: absolute;
+    left: 99px;
+    top: 10px;
+    transition: 0.4s ease-in-out;	
+}
+.acessories-seat:hover{
+	transform: scale(1.1);
+}
+.acessories-product-1{
+    width: 95px;
+    height: 180px;
+    position: absolute;
+    left: 128px;
+    top: 10px;
+    transition: 0.4s ease-in-out;
+}
+.acessories-product-1:hover{
+	transform: scale(1.1);
+}
+.acessories-product-2{
+    width: 256px;
+    height: 161px;
+    position: absolute;
+    left: 67px;
+    top: 32px;
+    transition: 0.4s ease-in-out;	
+}
+.acessories-product-2:hover{
+	transform: scale(1.1);
+}
+.filter {
+    padding: 6px 10px;
+    height: 36px;
+    width: 148px;
+    border-radius: 4px;
+    background-color: #f3713a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 52px;
+}
+.fliter-icon {
+  width: 23px;
+  height: 24px;
+}
+.filter-txt {
+  text-align: end;
+  color: #ffffff;
+  font-family:'Noto Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
 }
