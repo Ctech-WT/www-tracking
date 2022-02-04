@@ -16,7 +16,7 @@
 <div class ="trk-wrapper">
   <div class="header">
     <div class="content-wd nav">
-      <div class="logo"><a href="index.html"><img class="logim" src="images/image-slice/Layer_7.png" alt="" width="69" height="69"></a> <a href="#"><img class="name" src="images/image-slice/TRACKING.png" alt="" width="221" height="32"></a> </div>
+      <div class="logo"><a href="index.html"><img class="logim" src="images/image-slice/Layer_7.png" alt="" width="69" height="69"></a> <a href="index.html"><img class="name" src="images/image-slice/TRACKING.png" alt="" width="221" height="32"></a> </div>
       <div class="nav">
         <ul class="nav1">
           <li><a href="index.html">Home</a></li>
@@ -122,16 +122,16 @@
         <ul>
           <li><a href="About-Us.html" class="footer-link">About Us</a></li>
           <li><a href="shipping-policy.html" class="footer-link">Shipping policy</a></li>
-          <li><a href="privacy%20policy.html" class="footer-link">Privacy Policy</a></li>
+          <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
           <li><a href="terms-conditions.html" class="footer-link">Terms and Conditions</a></li>
           <li><a href="Refund-Policy.html" class="footer-link">Return & Exchange Policy</a></li>
         </ul>
         <ul>
-          <li><a href="#" class="footer-link">Register My Bike</a></li>
-          <li><a href="#" class="footer-link">Track My Order</a></li>
-          <li><a href="#" class="footer-link">Find Your Perfect Bike</a></li>
+          <li><a href="cycle-registration.html" class="footer-link">Register My Bike</a></li>
+          <li><a href="order-tracking.html" class="footer-link">Track My Order</a></li>
+          <li><a href="Perfect-Bike.html" class="footer-link">Find Your Perfect Bike</a></li>
           <li><a href="frame-size.html" class="footer-link">Frame Size Chart</a></li>
-          <li><a href="#" class="footer-link">Customer review</a></li>
+          <li><a href="customer-review.html" class="footer-link">Customer review</a></li>
         </ul>
         <ul style="margin-top: -73px;">
 <!--
@@ -139,15 +139,17 @@
           <li><a href="#" class="footer-link">Blog</a></li>
 -->
           <li><a href="#" class="footer-link">Contact us</a></li>
-          <li><a href="#" class="footer-link">Dealer Login</a></li>
+          <li><a href="Dealer-Login.html" class="footer-link">Dealer Login</a></li>
           <li><a href="warranty-policy.html" class="footer-link">Bike Warranty</a></li>
         </ul>
         <div class="footer-cnt-2">
           <p class="footer-para"> Register with Tracking to receive latest updates on<br>
             new arrivals, discounts and cycling inspiration. </p>
           <div class="footer-div">
+			  <form>
             <input class="footer-sub" type="email" placeholder="Email-ID">
             <input class="emial-sub" type="submit" value="SUBMIT">
+				  </form>
           </div>
           <div class="footer-social">
             <h3>Follow Us</h3>
@@ -184,7 +186,14 @@ $(".icons").click(function(){
 $(".cart-drop").hide();
 });
 });
-		
+	var slider = document.getElementById("height-Range");
+var output = document.getElementById(".height-value");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
 	</script>
 </body>
 <!-- InstanceEnd --></html>
