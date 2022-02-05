@@ -11,6 +11,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body{
+	min-width: 1200px;
+}
 .trk-wrapper {
   width: 100%;
   margin: 0px;
