@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 body{
-	min-width: 1200px;
+	min-width: 1280px;
 }
 .trk-wrapper {
   width: 100%;
@@ -351,14 +351,6 @@ body{
   font-weight: 700;
   margin-bottom: 51px
 }
-.biketyp-hd::before {
-  content: "";
-  width: 5px;
-  height: 24px;
-  background-color: #196481;
-  margin-right: 4px;
-  display: inline-block;
-}
 .biketyp-cnt {
   display: flex;
   justify-content: space-between;
@@ -489,14 +481,6 @@ body{
   font-weight: 700;
   margin-top: 72px;
 }
-.biketyp-hd::before {
-  content: "";
-  width: 5px;
-  height: 24px;
-  background-color: #196481;
-  margin-right: 4px;
-  display: inline-block;
-}
 .best-hd {
   font-family: 'Noto Sans', sans-serif;
   color: #f2631f;
@@ -504,14 +488,6 @@ body{
   font-weight: 700;
   margin-bottom: 108px;
   margin-top: 110px;
-}
-.best-hd::before {
-  content: "";
-  width: 5px;
-  height: 24px;
-  background-color: #196481;
-  margin-right: 4px;
-  display: inline-block;
 }
 .best-card {
   width: 386px;
@@ -614,14 +590,6 @@ body{
   margin-bottom: 54px;
   margin-top: 76px;
 }
-.perfect-hd::before {
-  content: "";
-  width: 5px;
-  height: 24px;
-  background-color: #196481;
-  margin-right: 4px;
-  display: inline-block;
-}
 .perfect-btn {
   width: 222px;
   height: 53px;
@@ -686,14 +654,7 @@ body{
   margin-bottom: 54px;
   margin-top: 76px;
 }
-.category-hd::before {
-  content: "";
-  width: 5px;
-  height: 24px;
-  background-color: #196481;
-  margin-right: 4px;
-  display: inline-block;
-}
+
 .category-cards {
   display: flex;
   flex-wrap: wrap;
@@ -1243,6 +1204,13 @@ body{
   color: #000000;
   font-size: 14px;
 }
+.frame-img{
+	    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    position: relative;
+    bottom: 55px;
+}
 .read {
   font-family: 'Noto Sans', sans-serif;
   color: #ff6633;
@@ -1276,16 +1244,19 @@ body{
 	background-color: #f1f3f6;
 }
 .cart-banner{
-	width: 100%;
-	height: 565px;
-	background-color: #000000;
-	position: relative;
-	margin-bottom: 109px;
+    width: 100%;
+    height: 565px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    margin-bottom: 109px;
+    overflow: hidden;
 }
 .banner-img{
     width: 100%;
-    height: 565px;
+    height: auto;
     opacity: 0.3;
+    position: relative;
+    bottom: 199px
 }
 .cart-banner-cnt{
     font-family: 'Noto Sans', sans-serif;
@@ -1598,11 +1569,12 @@ font-family: 'Noto Sans', sans-serif;
     margin-bottom: 56px;
 }
 .accessories-banner{
-	    width: 100%;
+    width: 100%;
     height: 565px;
     background-color: #000000;
     position: relative;
     margin-bottom: 11px;
+    overflow: hidden;
 }
 .accessories-wrap{
     margin-bottom: 116px;
@@ -1757,14 +1729,6 @@ font-family: 'Noto Sans', sans-serif;
     margin-bottom: 18px;
     margin-top: 24px;
 }
-.policy-hds::before {
-    content: "";
-    width: 5px;
-    height: 16px;
-    background-color: #196481;
-    margin-right: 4px;
-    display: inline-block;
-}
 .policy-para{ 
     margin-top: 15px;
     text-align: justify;
@@ -1775,9 +1739,11 @@ font-family: 'Noto Sans', sans-serif;
     color: #000000;
 }
 .about-img{
-	    width: 100%;
-    height: 565px;
+    width: 100%;
+    height: auto;
     opacity: 0.5;
+    position: relative;
+    bottom: 300px;
 }
 .about-banner-cnt{
 	    font-family: 'Noto Sans', sans-serif;
@@ -1826,6 +1792,7 @@ font-family: 'Noto Sans', sans-serif;
     height: 565px;
     background-color: #000000;
     position: relative;
+	overflow: hidden;
 }
 .about-sub{
     color: #F2631F;
@@ -1931,7 +1898,9 @@ font-family: 'Noto Sans', sans-serif;
 }
 .dealers-img{
     width: 100%;
-    height: 100%;	
+    height: 100%;
+    position: relative;
+    bottom: 234px;
 }
 .dealers-banner{
 	    width: 100%;
@@ -2160,7 +2129,6 @@ font-family: 'Noto Sans', sans-serif;
     margin-left: 11px;
     margin-right: 24px;
     /* background-color: #ff5200; */
-    color: black;
     padding: 3px 27px;
     border-radius: 27px;
     border: 1px solid #ff5200;
@@ -2212,11 +2180,14 @@ font-family: 'Noto Sans', sans-serif;
     height: 661px;
     background-color: #000000;
     position: relative;
+	overflow: hidden;
 }
 .perfect-bike{
-	    width: 100%;
-    height: 694px;
+    width: 100%;
+    height: auto;
     opacity: 0.3;
+    position: relative;
+    bottom: 102px;
 }
 .banner-perfect-h1{
 	    position: absolute;
